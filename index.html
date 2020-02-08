@@ -16,12 +16,12 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Web Site</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="57">
     <!-- Header -->
-    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" alt="logo" />
@@ -31,39 +31,35 @@
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-target="#navbar"
+          aria-controls="navbar"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-collapse collapse " id="navbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="#main"
+                >Home</a
+              > 
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#plant"
+                >Plant</a
+              > 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#place-time"
+                >Places</a
+              > 
+            </li>
+            <li class="nav-item pr-3">
+              <a class="nav-link" href="#form"
+                >Contact</a
+              > 
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -109,8 +105,8 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Possimus nisi voluptatum expedita nostrum dolor aperiam!
                     Pariatur maxime nemo, beatae vitae facere, velit
-                    voluptatibus eaque eos nisi vero, veniam porro totam
-                    incidunt. Rem asperiores obcaecati fuga cum
+                    voluptatibus eaque eos nisi vero, totam
+                    incidunt.
                   </p>
                   <button type="button" class="btn btn-outline-light">
                     Help
@@ -123,17 +119,17 @@
       </div>
     </main>
 
-    <!-- People -->
-    <section id="people" class="mt-4 mb-4">
+    <!-- plants -->
+    <section id="plant" class="mt-4 mb-4">
       <div class="container">
         <div class="row">
-          <div class="col text-center text-uppercase">
+          <div class="col text-center text-uppercase pb-3">
             <small>Plant a</small>
             <h2>Tree</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-lg-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card">
               <img
                 src="images/card1.png"
@@ -143,13 +139,12 @@
               <div class="card-body">
                 <h5 class="card-title">Trees</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum facilis pariatur vel nisi corrupti nemo autem neque iste quia necessitatibus.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card">
               <img
                 src="images/card2.png"
@@ -159,13 +154,12 @@
               <div class="card-body">
                 <h5 class="card-title">Trees</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio consequatur repellendus alias tempora ea in dicta ad dolore quam id!
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card">
               <img
                 src="images/card3.png"
@@ -175,17 +169,45 @@
               <div class="card-body">
                 <h5 class="card-title">Trees</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae autem commodi reprehenderit sunt quisquam minus voluptatem beatae fugiat possimus.
                 </p>
               </div>
             </div>
           </div>
+          <div class="col-12 col-md-6 offset-lg-2 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="images/card3.png"
+                class="card-img-top pt-4"
+                alt="card1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Trees</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minima nemo magni maiores vitae asperiores vel cum saepe omnis sint.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="images/card1.png"
+                class="card-img-top pt-4"
+                alt="card1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Trees</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi sint deleniti quidem at deserunt vitae voluptatem blanditiis quaerat ducimus explicabo.
+                </p>
+              </div>
+            </div>
         </div>
       </div>
     </section>
 
-    <!-- Date -->
+    <!-- places -->
     <section id="place-time">
       <div class="container-fluid">
         <div class="row">
@@ -193,7 +215,7 @@
             <img src="/images/1.jpg" alt="image" />
           </div>
           <div class="col-12 col-lg-6 pt-4 pb-4">
-            <h2>Reference Places</h2>
+            <h2>Reference Places </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
               repellendus cupiditate incidunt at velit animi ullam, voluptatum
@@ -207,6 +229,50 @@
         </div>
       </div>
     </section>
+
+    <!-- form -->
+    <section id="form" class="pt-3 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col text-uppercase text-center pt-4 pb-4">
+            <small>the change</small>
+            <h2>Begins</h2>
+            <img src="/images/car.png" alt="">
+          </div>        
+        </div>
+       <div class="row">
+            <div class="col text-center pt-2 pb-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti sapiente in quod magni, ut neque!
+            </div>
+       </div>
+       <div class="row">
+         <div class="col col-md-10  offset-md-1 col-lg-8 offset-lg-2 pt-2">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <textarea name="text" class="form-control form-control-lg" placeholder="What do you want to talk?"></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <button type="button" class="btn btn-outline-success btn-block">Send</button>
+              </div>
+            </div>
+          </form>
+         </div>
+       </div>
+      </div>
+    </section>
+
+
     <!-- Footer -->
     <footer id="footer" class="pb-4 pt-4">
       <div class="container">
@@ -243,5 +309,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="/scripts/index.js"></script>
   </body>
 </html>
