@@ -32,6 +32,14 @@
   margin-right: auto;
 }
 
+#place-time {
+  background-color: #f8f9fa;
+  color: black;
+}
+#place-time img {
+  max-width: 100%;
+}
+
 #footer {
   background: #53dd6c;
 }
